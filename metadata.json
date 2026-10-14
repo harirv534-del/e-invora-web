@@ -1,0 +1,6 @@
+{
+  "name": "E-INVORA — Digital Invitation Websites",
+  "description": "Every Celebration Deserves a Beautiful Invitation. Premium bespoke digital invitation websites with interactive previews, multi-tier packages, and owner-only administration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

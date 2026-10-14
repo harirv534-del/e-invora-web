@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-ivory: #F8F3EA;
+    --color-gold: #D4B477;
+    --color-gold-light: #EBD8A9;
+    --color-gold-dark: #A58442;
+    --color-burgundy: #6E2639;
+    --color-burgundy-dark: #4A1624;
+    --color-burgundy-light: #8E364C;
+    --color-espresso: #29221F;
+    --color-espresso-light: #4A3E39;
+    --color-beige: #E9DFD0;
+    --color-beige-light: #FAF7F2;
+  }
+
+  body {
+    background-color: #F8F3EA;
+    color: #29221F;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Luxury card borders and gold sheen */
+.gold-border {
+  border: 1px solid rgba(212, 180, 119, 0.35);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #A58442 0%, #D4B477 50%, #8E6D2E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #D4B477 0%, #EBD8A9 50%, #C4A15D 100%);
+}
+
+.burgundy-gradient-bg {
+  background: linear-gradient(135deg, #6E2639 0%, #571C2B 100%);
+}
+
+/* Subtle gold box shadow */
+.shadow-gold-sm {
+  box-shadow: 0 4px 20px -2px rgba(212, 180, 119, 0.15);
+}
+
+.shadow-gold-md {
+  box-shadow: 0 10px 30px -4px rgba(212, 180, 119, 0.22);
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F3EA;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4B477;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A58442;
+}

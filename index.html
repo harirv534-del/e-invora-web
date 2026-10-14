@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#F8F3EA" />
+    <title>E-INVORA — Digital Invitation Websites</title>
+    <meta name="description" content="Every Celebration Deserves a Beautiful Invitation. Premium bespoke digital invitation websites with interactive previews, multi-tier packages, and owner-only administration." />
+    <meta property="og:title" content="E-INVORA — Digital Invitation Websites" />
+    <meta property="og:description" content="Every Celebration Deserves a Beautiful Invitation. Premium bespoke digital invitation websites with interactive previews, multi-tier packages, and owner-only administration." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body style="margin:0;background:#F8F3EA">
+    <div id="root">
+      <!-- Shown until the app starts. If it never starts, the script below explains why. -->
+      <div id="boot-msg" style="font-family:system-ui,sans-serif;color:#29221F;text-align:center;padding:64px 24px">
+        <p style="font-family:Georgia,serif;font-size:28px;color:#6E2639;margin:0 0 8px">E-INVORA</p>
+        <p style="margin:0">Loading your website...</p>
+      </div>
+    </div>
+    <noscript>
+      <p style="font-family:sans-serif;padding:24px;text-align:center">E-INVORA needs JavaScript. Please enable JavaScript in your browser.</p>
+    </noscript>
+    <script>
+      (function () {
+        function show(html) {
+          var el = document.getElementById('boot-msg');
+          if (el) el.innerHTML = html;
+        }
+        if (location.protocol === 'file:') {
+          show('<p style="font-family:Georgia,serif;font-size:26px;color:#6E2639;margin:0 0 12px">Please start the website first</p>' +
+            '<p style="max-width:520px;margin:0 auto 8px;line-height:1.6">This page was opened straight from a file, which cannot run the website. ' +
+            'Double-click <b>start-local.bat</b> in the E-INVORA folder (Windows), or run <b>npm run dev</b>, then open <b>http://localhost:3000</b>.</p>');
+          return;
+        }
+        setTimeout(function () {
+          var el = document.getElementById('boot-msg');
+          if (el) show('<p style="font-family:Georgia,serif;font-size:24px;color:#6E2639;margin:0 0 12px">The website did not start</p>' +
+            '<p style="max-width:520px;margin:0 auto;line-height:1.6">Press F12 and open the Console tab to see the error, and check the terminal window running the server. See README.md, section Troubleshooting.</p>');
+        }, 8000);
+      })();
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

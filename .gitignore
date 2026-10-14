@@ -1,0 +1,13 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+server/data/owner.json
+server/data/owner.json.tmp
+.env*
+!.env.example
+
+# Runtime customer data (bookings, contact details, sessions) - never commit
+server/data/store.json
